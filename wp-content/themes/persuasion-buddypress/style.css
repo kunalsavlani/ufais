@@ -1,0 +1,75 @@
+/*
+Theme Name: Persuasion BuddyPress
+Theme URI: http://mysitemyway.com/
+Description: A Mysitemyway Premium Wordpress Theme
+Author: Mysitemyway
+Author URI: http://mysitemyway.com/
+Template: persuasion
+Version: 1.0
+Tags: buddypress
+*/
+
+@import url('../persuasion/style.css');
+@import url('mysitemyway_shared.css');
+
+
+/*	Misc
+-------------------------------------------------------------- */
+span.activity,span.time-since{font-family:georgia;font-style:italic;text-transform:lowercase;}
+ul#topic-post-list li.alt,table tr.alt td{background:transparent;}
+table tr td{border-bottom:1px solid rgba(125,125,125,.2);}
+div#subnav.item-list-tabs,div.item-list-tabs ul li.selected a,div.item-list-tabs ul li.current a{background-color:#fafafa;}
+#footer .avatar,
+#footer .mysite_flickr_widget img,
+#footer .post_grid_image img,
+#footer .post_list_image img,
+#footer .framed{background:rgba(200,200,200,.2);border:1px solid rgba(200,200,200,.2);padding:4px;}
+#footer .widget_bp_groups_widget a:hover,#footer .widget_bp_core_members_widget a:hover{background:none;}
+#footer .widget .item-list li{padding:0;}
+
+/*	Admin Bar
+-------------------------------------------------------------- */
+#wp-admin-bar{background:rgba(0,0,0,0.5)!important;}
+#wp-admin-bar .padder{background:none!important;width:980px!important}
+#admin-bar-logo{padding-left:0!important;}
+
+/*	Border Radius
+-------------------------------------------------------------- */
+.standard-form textarea,
+.standard-form input[type=text],
+.standard-form input[type=password],
+.dir-search input[type=text],
+div#invite-list,
+div#message p,
+span.highlight,
+.standard-form#signup_form div div.error,
+div#item-header h2 span.highlight span,
+li span.unread-count,tr.unread span.unread-count,
+form#whats-new-form textarea{
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;}
+div.activity-comments form .ac-textarea,
+div.activity-comments form.ac-form,
+.activity-list li.load-more,
+div.activity-comments>ul,
+body.activity-permalink .activity-list li .activity-content{
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;}
+
+/*	Forms
+-------------------------------------------------------------- */
+.standard-form input[type="password"],
+.standard-form input[type="text"],
+.dir-search input[type="text"],
+textarea,.standard-form textarea,form#whats-new-form textarea{
+background:#f0f0f0;
+border-color:#d9d9d9 #fff #fff;border-style:solid;border-width:1px;
+color:#888;font-size:12px;letter-spacing:0.4px;padding:8px;}
+.standard-form input[type="password"]:focus,
+.standard-form input[type="text"]:focus,
+.dir-search input[type="text"]:focus,
+textarea:focus,
+.standard-form textarea:focus,
+form#whats-new-form textarea:focus{background:#f7f7f7;}

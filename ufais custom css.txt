@@ -1,0 +1,87 @@
+/* Hide BuddyPress "" Profile Messages*/
+.field-visibility-settings-toggle {
+	display: none;
+}
+
+.field-visibility-settings-notoggle {
+	display: none;
+}
+
+.timely .btn {
+	width: 150px;
+	float: none;
+	margin-bottom: 5px;
+}
+
+.standard-form input:focus, .standard-form textarea:focus, .standard-form select:focus {
+	background: #fff;
+}
+
+ul.item-list li {
+	float: left;
+	width: 300px;
+	height: 100px;
+/* accommodate the widest item */
+}
+
+#pag-bottom {
+	display: inline-block;
+	width: 100%;
+}
+
+#search-terms {width:225px}
+
+#header h1 a {text-transform:uppercase}
+
+#logo {margin-top:2px;}
+
+
+/*login screen */
+.login #nav a:first-child {color: darkorange;}
+
+#branding {display: none ;}
+
+#content {
+	background-color: #E5E5EB;
+}
+
+.entry h3 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: red;
+}
+
+.sticky.post {
+    background: #E1DFEB;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+}
+
+input {
+    border: 1px inset #CCC;
+}
+
+div.tagsinput input {
+    border: none;
+}
+
+.entry, .sticky.post h2.posttitle a {
+    color: #666;
+}
+
+.sticky.post div.author-box {
+}
+
+span.activity, div#message p {background:#FFEBC7}
+
+span.user-nicename, span.activity {display:none;}
+
+div#item-header #bp-before-member-header #item-header-content {margin-left: 0px; margin-top:7px;}
+
+Aron Aperauch <aperauch@ufl.edu>,
+ vn@ufl.edu,
+ vinsonc@ufl.edu,
+ yezhuangjms@gmail.com,
+ Alexander DiNardo <alexanderdinardo@gmail.com>

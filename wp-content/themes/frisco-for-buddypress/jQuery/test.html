@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery Tags Input Test Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<link rel="stylesheet" type="text/css" href="jquery.tagsinput.css" />
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/south-street/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	<script src="jquery.tagsinput.min.js"></script>
+
+	<script type="text/javascript">
+		function onAddTag(tag) {
+			alert("Added a tag: " + tag);
+		}
+		function onRemoveTag(tag) {
+			alert("Removed a tag: " + tag);
+		}
+		
+		$(function() {
+			
+			var available_tags = [ 
+				"ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL","ColdFusion", "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala", "Scheme"
+			];
+			
+			// See jQuery Autocomplete for the complete list of Autocomplete options
+			// ( http://jqueryui.com/demos/autocomplete/ )
+			$('#tag_it').tagsInput({
+			    autocomplete: {source: available_tags},
+			});
+// Uncomment this line to see the callback functions in action
+//			$('input.tags').tagsInput({onAddTag:onAddTag,onRemoveTag:onRemoveTag});		
+
+// Uncomment this line to see an input with no interface for adding new tags.
+//		$('input.tags').tagsInput({interactive:false});
+		});
+	
+	</script>
+	
+</head>
+<body>	
+
+	<section>
+	    <h4>Jquery Tags Input with jQuery UI Autocomplete:</h4>
+		<form>
+			<input id="tag_it" type="text" class="tags" />
+		</form>
+	</section>
+
+</body>
